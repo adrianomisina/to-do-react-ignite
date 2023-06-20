@@ -1,0 +1,48 @@
+.session__container,
+.spinner__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.spinner__container p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: -5rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .spinner {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 5px solid var(--blue);
+    border-top-color: var(--blue-dark);
+    border-radius: 50%;
+    animation: spin 1s ease-in-out infinite;
+}
+
+.tasks__container {
+    min-width: 736px;
+    min-height: 287px;
+    background-color: var(--gray-700);
+}
+
+.tasks__badges__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks__badge__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
