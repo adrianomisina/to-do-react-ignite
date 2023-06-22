@@ -1,1 +1,64 @@
 # to-do-react-ignite
+
+Sistema de Tarefas
+
+O Sistema de Tarefas é uma aplicação simples desenvolvida em React, que permite aos usuários criar, visualizar e gerenciar tarefas. Ele oferece uma interface intuitiva para adicionar novas tarefas, marcar tarefas como concluídas e excluir tarefas existentes.
+
+O sistema é composto por três componentes principais:
+
+TaskForm: Este componente exibe um formulário onde os usuários podem adicionar novas tarefas. Ao preencher o campo de texto com o título da tarefa e pressionar o botão "Criar", a nova tarefa é adicionada à lista de tarefas.
+
+TaskList: Este componente exibe a lista de tarefas criadas. Cada tarefa é exibida com seu título correspondente e possui uma opção para marcá-la como concluída. Os usuários podem clicar no ícone de verificação para alternar o estado de conclusão de uma tarefa. Além disso, cada tarefa também possui um ícone de lixeira para excluir a tarefa da lista.
+
+App: O componente App é o componente principal da aplicação. Ele inclui o cabeçalho, que fornece uma breve descrição do sistema, e agrupa o TaskForm e o TaskList para formar a interface completa do sistema de tarefas.
+
+O Sistema de Tarefas é uma ferramenta simples e útil para organizar suas tarefas diárias, lembrar-se de suas responsabilidades e acompanhar o progresso das suas atividades. Com sua interface amigável e recursos básicos, ele fornece uma maneira rápida e fácil de gerenciar suas tarefas.
+
+Sinta-se à vontade para explorar, personalizar e melhorar o sistema de acordo com suas necessidades específicas. Divirta-se usando o Sistema de Tarefas!
+
+Instruções de Instalação
+Para executar o Sistema de Tarefas em seu ambiente local, siga as instruções abaixo:
+
+Certifique-se de ter o Node.js instalado em seu computador. Você pode baixar a versão mais recente do Node.js em: https://nodejs.org
+
+Faça o clone deste repositório para o seu computador ou baixe-o como arquivo ZIP e extraia-o.
+
+Abra o terminal ou prompt de comando e navegue até o diretório raiz do projeto.
+
+Execute o seguinte comando para instalar as dependências do projeto:
+
+npm install
+
+Após a conclusão da instalação das dependências, execute o seguinte comando para iniciar a aplicação:
+
+npm start
+
+O sistema de tarefas será executado localmente e estará disponível no seu navegador no seguinte endereço: http://localhost:3000
+
+Agora você pode começar a utilizar o Sistema de Tarefas para criar e gerenciar suas tarefas de forma simples e eficiente.
+
+Contribuição
+Se você quiser contribuir para o desenvolvimento do Sistema de Tarefas, siga as etapas abaixo:
+
+Faça um fork deste repositório e clone-o para o seu ambiente de desenvolvimento.
+
+Crie um novo branch para as suas alterações:
+
+css
+Copy code
+git checkout -b minha-branch
+Faça as alterações desejadas e teste-as localmente.
+
+Envie as alterações para o seu repositório forkado:
+
+perl
+Copy code
+git push origin minha-branch
+Abra um pull request neste repositório, descrevendo suas alterações e suas motivações para contribuir.
+
+Agradecemos antecipadamente por suas contribuições para melhorar o Sistema de Tarefas!
+
+Licença
+Este projeto está licenciado sob a Licença MIT. Para mais informações, consulte o arquivo LICENSE.
+
+Esperamos que você aproveite o Sistema de Tarefas e que ele seja útil para ajudá-lo a organizar suas tarefas diárias. Se você tiver alguma dúvida ou precisar de suporte, sinta-se à vontade para entrar em contato conosco.
