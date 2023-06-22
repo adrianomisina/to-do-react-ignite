@@ -5,7 +5,7 @@ import TaskList from "./components/TaskList"
 export interface TaskType {
   id: number;
   title: string;
-  isCompleted: boolean;
+  isCompleted: null | boolean;
 }
 
 const App = () => {
@@ -41,12 +41,25 @@ const App = () => {
     setTasks([...tasks, newTask])
   }
 
+  const handleToggleCompleted = (taskId: number) => {
+    setTasks((prevTasks) =>
+      prevTasks.map((task) =>
+        task.id === taskId ? { ...task, isCompleted: !task.isCompleted } : task
+      )
+    );
+  };
+
+  const handleDeleteTask = (taskId: number) => {
+    const updateTasks = tasks.filter((task)=> task.id !== taskId)
+    setTasks(updateTasks)
+  }
+
   return (
     <>
       <Header />
       <main>
         <TaskForm onCreateTask = {handleCreateTask}/>
-        <TaskList tasks={tasks}/>
+        <TaskList tasks={tasks} onToggleCompleted={handleToggleCompleted} onDeleteTask = {handleDeleteTask}/>
       </main>
     </>
   )
