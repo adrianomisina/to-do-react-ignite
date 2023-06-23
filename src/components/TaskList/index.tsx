@@ -79,7 +79,7 @@ const TaskList = ({ tasks, onToggleCompleted, onDeleteTask }: TaskListProps) => 
                   onClick={() => onToggleCompleted(task.id)}
                 />
                 <p className={task.isCompleted ? styles.completedTask : styles.notCompleteTask}>{task.title}</p>
-                <img src={TrashIcon} alt="trash icon" onClick={() => onDeleteTask(task.id)} />
+                <img src={TrashIcon} alt="trash icon" onClick={() => onDeleteTask(task.id)} className={styles.trash__icon} />
               </div>
             ))}
           </div>

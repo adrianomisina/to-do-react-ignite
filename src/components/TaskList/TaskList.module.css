@@ -122,3 +122,8 @@
 .notCompleteTask {
     color: var(--gray-200);
 }
+
+.trash__icon {
+    cursor: pointer;
+}
+
